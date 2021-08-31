@@ -41,17 +41,17 @@ Documentation à lire impérativement avant le démarrage de la SAE:
 - <https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps>
 - <https://github.com/MicrosoftDocs/sysinternals>
 
+## Plugins VScode intéressant afin de réaliser les livrables de la SAE
 
-## Plugins VScode intéressant afin de réaliser les livrables de la SAE:
-
-- https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
-- https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
-- https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid
-- https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image
+- <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
+- <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
+- <https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid>
+- <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
 
 ## 2. Contexte professionnel
 
 ### 2.1 Description du projet
+
 #### 2.1.1 Situation
 
 Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille d’OS ou de matériels. La direction inquiète de ce cloisonnement et voudrait rendre polyvalentes ses équipes.
@@ -69,8 +69,8 @@ Le CTO (« Chief Technical Officier ») vous demande en tant que technicien su
 
 - Créer un document ressource permettant à tous les techniciens de travailler sans cloisonnement afin d'améliorer la polyvalence de chacun. Ce document qui se veut pratique avec des exemples doit contenir des outils logiciels pour la configuration des réseaux des postes et aussi des outils pour analyser d’éventuels problèmes basiques sur un poste de travail (TroubleShooting). Le document doit faire correspondre une commande Linux à son équivalent Windows si c’est possible.
     Chaque commande doit être accompagnée d'un exemple et de sa sortie.
-    C’est le **premier livrable** à rendre. 
--  Trouver la meilleure solution et être capable de la défendre auprès de la direction afin de mixer Windows et Linux ensemble sur le même poste de travail. La solution retenue devra être implémentée. Il faudra comparer dans un tableau les différentes solutions. C’est le **deuxième livrable** à rendre. Un "brainstorming" des solutions possibles est organisé par le C.T.O.. Il est vivemant conseillé d'explorer les différentes solutions en les implémentant.
+    C’est le **premier livrable** à rendre.
+- Trouver la meilleure solution et être capable de la défendre auprès de la direction afin de mixer Windows et Linux ensemble sur le même poste de travail. La solution retenue devra être implémentée. Il faudra comparer dans un tableau les différentes solutions. C’est le **deuxième livrable** à rendre. Un "brainstorming" des solutions possibles est organisé par le C.T.O.. Il est vivemant conseillé d'explorer les différentes solutions en les implémentant.
 - Concevoir une architecture réseau simple pour chaque salle avec une segmentation de deux postes par réseaux et tous les réseaux pouvant communiquer entre eux. Le CTO vous demande un schéma réseau en utilisant l'outil de dessin draw.io. L'adressage et la représentation icôniques des matériels suivra les normes imposées par le CTO. C’est le **troisième livrable** à rendre.
 
 Le schéma suivant résume les trois composantes de la SAE.
