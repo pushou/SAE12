@@ -75,5 +75,5 @@ Le CTO (« Chief Technical Officier ») vous demande en tant que technicien su
 
 Le schéma suivant résume les trois composantes de la SAE.
 
-![resumé livrabe sae 12](image1-mermaid.png  "SAE12 en résumé")
+![resumé livrabe sae 12](./image1-mermaid.png  "SAE12 en résumé")
 
