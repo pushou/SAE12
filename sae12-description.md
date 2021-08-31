@@ -47,6 +47,7 @@ Documentation à lire impérativement avant le démarrage de la SAE:
 - https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 - https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
 - https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid
+- https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image
 
 ## 2. Contexte professionnel
 
@@ -74,15 +75,5 @@ Le CTO (« Chief Technical Officier ») vous demande en tant que technicien su
 
 Le schéma suivant résume les trois composantes de la SAE.
 
-``` mermaid
-     Graph LR;
-        SAE12[SAE12]-->id1["Réaliser un réseau simple et communiquant entre les équipes"];
-        SAE12-->id2["Implémenter Linux et Windows sur le même poste de travail"];
-        SAE12-->id3["Configurer le réseau de son poste de travail"];
-        style SAE12 fill:#99ccff,stroke:#337,stroke-width:8px;
-        style id1 fill:#f9f,stroke:#337,stroke-width:2px;
-        style id2 fill:#f9f,stroke:#337,stroke-width:2px;
-        style id3 fill:#f9f,stroke:#337,stroke-width:2px;
-        click SAE12 href "https://github.com/pushou/SAE12.git" "Lien vers le repo Git de la SAE12"
-```
+![resumé livrabe sae 12](image1-mermaid.png  "SAE12 en résumé")
 
