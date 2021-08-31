@@ -32,7 +32,7 @@ Instructions étudiants avant la SAE:
 
 Conditions de travail :
 
-Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf).
+Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf.
 
 Documentation à lire impérativement avant le démarrage de la SAE:
 
