@@ -4,8 +4,14 @@
 
 ### 1.1.1 Contenu des cours et des TD
 
-- CM 1h : Présentation de la SAE et normes à respecter (icônes).
-- TD 1h : Rédaction du plan d’actions avec une brainstorming sur MindView qui sera validé et noté par l’enseignant ou les pros présents.
+  CM 1h + TD 1h
+  Lors de ses deux heures il vous sera présenté:
+
+- la SAE et normes à respecter (icônes et adressage).
+- L'outil draw.io et son integration avec VSCode.
+- l'outil VSCode et de son intégration avec  Git.
+- Le language Markdown.
+- L'installation d'un OS par virtualisation afin de réaliser la S.A.E. dans de bonnes conditions.
 
 ### 1.1.2 Heures allouées
 
@@ -15,26 +21,26 @@
 ### 1.1.3 Recommandations aux étudiants
 
 Le document suivant est accessible sur GitHub:
+<https://github.com/pushou/SAE12> et peut être consulté à tout moment. Il donne un exemple de ce qui est attendu par le responsable technique de la société en termes de livrable.
 
-- Matériels à votre disposition : PC du CloudLab, Routeur Mikrotik, (mini)switchs Cisco.
+- Matériels à votre disposition : PC du CloudLab sous Windows, Routeurs, (mini)switchs Cisco, PC sous Linux de l'IUT.
 
 - Logiciels à disposition :
-  - MindView (service pédagogique pour les licences) ;
-  - Licence logicielle Microsoft (voir le service pédagogique et <https://azureforeducation.microsoft.com/devtools>)
   - Logiciel proposé pour écrire en MarKDown : Vscode
-  - Git Hub for education pour le rendu en MarkDown (voir l'enseignant pour obtenir l’URL)
+  - Git Hub for education pour le rendu en MarkDown (voir l'enseignant pour obtenir l’URL de rendu)
 
 Instructions étudiants avant la SAE:
 
-- Lire la documentation
-- Se préoccuper du matériel
-- Établir un plan des actions à réaliser avant d’entreprendre quoi que ce soit.
+- Lire la documentation proposée.
+- Installer VSCode et suivre un tutoriel sur MarkDown.
+- Créer un compte sur Github (Utiliser votre prénom.nom si vous voulez être noté !).
+- Réfléchir avant d’entreprendre quoi que ce soit et établir un chemin à réaliser en début de chaque demi-journée.
 
-Conditions de travail :
+#### Conditions de travail
 
-Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf.
+Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
 
-Documentation à lire impérativement avant le démarrage de la SAE:
+#### Documentation à lire impérativement avant le démarrage de la SAE
 
 - <https://baturin.org/docs/iproute2/>
 - <https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig>
@@ -54,9 +60,7 @@ Documentation à lire impérativement avant le démarrage de la SAE:
 
 #### 2.1.1 Situation
 
-Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille d’OS ou de matériels. La direction inquiète de ce cloisonnement et voudrait rendre polyvalentes ses équipes.
-
-D'autre part la direction souhaite favoriser l'intégration des jeunes de la génération Z dans l'entreprise. Désirant les fidéliser elle souhaite que ces "Z" aient sur leurs postes de travail à la fois de Linux et de Windows.
+Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille de système d'exploitation. La direction inquiète de ce cloisonnement voudrait rendre polyvalentes ses équipes. Cette polyvalence s'appuiera sur des documents décrivant la configuration du réseau et son dépannage pour Linux et Windows.
 
 Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans un réseau séparé des autres mais doit pouvoir communiquer avec eux. L'utilisation d'un firewall est recommandé.
 
@@ -68,26 +72,26 @@ D'autre part cette société ayant comme principal activité le développement l
 Le CTO (« Chief Technical Officier ») vous demande en tant que technicien supérieur de :  
 
 - Créer un document ressource permettant à tous les techniciens de travailler sans cloisonnement afin d'améliorer la polyvalence de chacun. Ce document qui se veut pratique avec des exemples doit contenir des outils logiciels pour la configuration des réseaux des postes et aussi des outils pour analyser d’éventuels problèmes basiques sur un poste de travail (TroubleShooting). Le document doit faire correspondre une commande Linux à son équivalent Windows si c’est possible.Chaque commande doit être accompagnée d'un exemple et de sa sortie. C’est le **premier livrable** à rendre.
-- Trouver la meilleure solution et être capable de la défendre auprès de la direction afin de mixer Windows et Linux ensemble sur le même poste de travail. La solution retenue devra être implémentée. Il faudra comparer dans un tableau simple les différentes solutions. C’est le **deuxième livrable** à rendre. Un présentation des solutions possibles sera réalisée par le C.T.O.. Vous devrez comparer avec vos critères les solutions proposés, les tester rapidement et argumenter sur celle qui aura votre préférence (par eemple avec un tableau multicritère sur les trois solutions proposées)
-- Concevoir une architecture réseau simple pour chaque salle avec une segmentation de deux postes par réseaux et tous les réseaux pouvant communiquer entre eux. Le CTO vous demande un schéma réseau en utilisant l'outil de dessin draw.io. L'adressage et la représentation icôniques des matériels suivra les normes imposées par le CTO. C’est le **troisième livrable** à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahiers des charges.
 
-Le schéma suivant résume les trois composantes de la SAE.
+- Concevoir une architecture réseau simple pour chaque salle avec une segmentation de deux postes par réseaux et tous les réseaux pouvant communiquer entre eux. Le CTO vous demande un schéma réseau en utilisant l'outil de dessin draw.io. L'adressage et la représentation icôniques des matériels suivra les normes imposées par le CTO. C’est le **deuxième livrable** à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahiers des charges.
+
+Le schéma suivant résume les deux composantes de la SAE.
 
 ``` mermaid
      flowchart LR;
         SAE12[SAE12]-->id1["Réaliser un réseau simple et communiquant entre les équipes"];
-        SAE12-->id2["Implémenter Linux et Windows sur le même poste de travail"];
-        SAE12-->id3["Configurer le réseau de son poste de travail"];
+        SAE12-->id3["Configurer et dépanner le réseau de son poste de travail"];
         style SAE12 fill:#99ccff,stroke:#337,stroke-width:8px;
         style id1 fill:#f9f,stroke:#337,stroke-width:2px;
-        style id2 fill:#f9f,stroke:#337,stroke-width:2px;
         style id3 fill:#f9f,stroke:#337,stroke-width:2px;
         click SAE12 href "https://github.com/pushou/SAE12.git" "Lien vers le repo Git de la SAE12"
 ```
 
+## 3. Description de la SAE et objectifs
+
 |Titre de la SAÉ|Dépannage et intégration réseau d"un poste client multi-os|
 |---------------|------------------------------------------------------------------------------------------------|
-|**Quelle problématique professionnelle propose-t-elle ?**|- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques du fait de la multiplicité des missions des usagers et du travail quotidien des personnels qui repose sur des postes de travail adaptés. Des problématiques concrètes comme la configuration du réseau du poste de travail, la présence de deux systèmes d'exploitation sur une même machine seront posés aux étudiants. <br>- La création d'un livrable technique, sous un format maintenable par une équipe est une situation courante pour les informaticiens.<br>- la réalisation de schéma réseaux est une tâche courante pour un technicien de la filère R&T et c'est un exercice utile proposé par cette SAE ainsi que la prise de notes technique.
+|**Quelle problématique professionnelle propose-t-elle ?**|- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques du fait de la multiplicité des missions des usagers et du travail quotidien des personnels qui repose sur des postes de travail adaptés. Des problématiques concrètes comme la configuration du réseau du poste de travail et le dépannage est proposée aux étudiants. <br>- La création d'un livrable technique, sous un format maintenable par une équipe est une situation courante pour les informaticiens.<br>- la réalisation de schéma réseaux est une tâche courante pour un technicien de la filère R&T et c'est un exercice utile proposé par cette SAE. De même la prise de notes technique au travers d'un éditeur (VSCode) très utilisé de nos jours et la sauvegarde au travers de Git prépare les étudiants à un fonctionnement adopté par les organisations informatiques performantes (Infrastructure as Code , Continuous Integration & Delivery...)
 |**Description de la SAÉ en quelques lignes**|-Il s'agit de répondre à un cahier des charges <br> - D'explorer des solutions techniques, de choisir celle répondant le mieux au besoin<br>D'être capable d'argumentez sur ces choix.<br>- de fournir des livrables sous un format et un délai contraint.
-|**Formes pédagoqiques**|TD, projets| 
+|**Formes pédagoqiques**|TD, projets|
 |**Modalités d’évaluation à concevoir pour s’assurer que cette SAÉ participe à l’acquisition du niveau de compétence ciblé**|L’étudiant doit:<br> - être capable de retranscrire l’architecture réseau grâce à un outil de schéma réseau <br> - de présenter un livrable clair, généré au fur et à mesure du déroulement de la SAE par la prise de note.
