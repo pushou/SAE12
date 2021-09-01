@@ -1,4 +1,4 @@
-# Présentation du contexte de la SAE12: Gérer le poste de travail en entreprise
+# Présentation du contexte de la SAE12: Gérer et depanner le réseau du  poste de travail en entreprise
 
 ## 1.1 Présentation du contexte de la SAE12
 
@@ -9,6 +9,7 @@
 
 - la SAE et normes à respecter (icônes et adressage).
 - L'outil draw.io et son integration avec VSCode.
+- Mermaid dans VScode.
 - l'outil VSCode et de son intégration avec  Git.
 - Le language Markdown.
 - L'installation d'un OS par virtualisation afin de réaliser la S.A.E. dans de bonnes conditions.
@@ -40,19 +41,23 @@ Instructions étudiants avant la SAE:
 
 Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
 
-#### Documentation à lire impérativement avant le démarrage de la SAE
+
+#### Documentation de référence pour les réseaux avec Linux.
 
 - <https://baturin.org/docs/iproute2/>
+#### Documentation Windows à lire impérativement avant le démarrage de la SAE
+
 - <https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig>
 - <https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps>
 - <https://github.com/MicrosoftDocs/sysinternals> & <https://docs.microsoft.com/fr-fr/sysinternals/>
 
 ## Plugins VScode intéressant afin de réaliser les livrables de la SAE
 
-- <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
-- <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
-- <https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid>
-- <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
+* <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
+* <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
+* <https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid>
+* <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
+* <https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts>
 
 ## 2. Contexte professionnel
 
@@ -89,7 +94,7 @@ Le schéma suivant résume les deux composantes de la SAE.
 
 ## 3. Description de la SAE et objectifs
 
-|Titre de la SAÉ|Dépannage et intégration réseau d"un poste client multi-os|
+|Titre de la SAÉ|Gérer et depanner le réseau du  poste de travail en entreprise|
 |---------------|------------------------------------------------------------------------------------------------|
 |**Quelle problématique professionnelle propose-t-elle ?**|- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques du fait de la multiplicité des missions des usagers et du travail quotidien des personnels qui repose sur des postes de travail adaptés. Des problématiques concrètes comme la configuration du réseau du poste de travail et le dépannage est proposée aux étudiants. <br>- La création d'un livrable technique, sous un format maintenable par une équipe est une situation courante pour les informaticiens.<br>- la réalisation de schéma réseaux est une tâche courante pour un technicien de la filère R&T et c'est un exercice utile proposé par cette SAE. De même la prise de notes technique au travers d'un éditeur (VSCode) très utilisé de nos jours et la sauvegarde au travers de Git prépare les étudiants à un fonctionnement adopté par les organisations informatiques performantes (Infrastructure as Code , Continuous Integration & Delivery...)
 |**Description de la SAÉ en quelques lignes**|-Il s'agit de répondre à un cahier des charges <br> - D'explorer des solutions techniques, de choisir celle répondant le mieux au besoin<br>D'être capable d'argumentez sur ces choix.<br>- de fournir des livrables sous un format et un délai contraint.
