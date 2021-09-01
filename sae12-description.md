@@ -41,10 +41,10 @@ Instructions étudiants avant la SAE:
 
 Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
 
-
-#### Documentation de référence pour les réseaux avec Linux.
+#### Documentation de référence pour les réseaux avec Linux
 
 - <https://baturin.org/docs/iproute2/>
+
 #### Documentation Windows à lire impérativement avant le démarrage de la SAE
 
 - <https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig>
@@ -53,11 +53,11 @@ Travail en groupes de deux étudiants avec un CR commun au format markdown doubl
 
 ## Plugins VScode intéressant afin de réaliser les livrables de la SAE
 
-* <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
-* <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
-* <https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid>
-* <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
-* <https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts>
+- <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
+- <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
+- <https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid>
+- <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
+- <https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts>
 
 ## 2. Contexte professionnel
 
