@@ -1,8 +1,9 @@
 # SAE12 réseau
+
 - [SAE12 réseau](#sae12-réseau)
   - [1. Description de la SAE12 (semestre 1 du BUT R&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
   - [2. Recommandations aux étudiants](#2-recommandations-aux-étudiants)
-      - [Conditions de travail](#conditions-de-travail)
+      - [Conditions de travail et d'évaluation](#conditions-de-travail-et-dévaluation)
   - [3. Documentations](#3-documentations)
     - [3.1 Documentation de référence pour les réseaux avec Linux](#31-documentation-de-référence-pour-les-réseaux-avec-linux)
     - [3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE](#32-documentation-windows-à-lire-impérativementavant-le-démarrage-de-la-sae)
@@ -41,9 +42,9 @@ Instructions aux étudiants avant la SAE:
 - Créer un compte sur Github (Utiliser votre prénom.nom si vous voulez être noté !).
 - Réfléchir avant d’entreprendre quoi que ce soit et établir un chemin à réaliser en début de chaque demi-journée.
 
-#### Conditions de travail
+#### Conditions de travail et d'évaluation
 
-Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
+Travail et évaluation en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.L'évaluation peut être différente si le niveau d'implication est différent dans un groupe. 
 
 ## 3. Documentations
 
