@@ -1,28 +1,31 @@
-# Présentation du contexte de la SAE12: Gérer et depanner le réseau du  poste de travail en entreprise
+# SAE12 réseau
+- [SAE12 réseau](#sae12-réseau)
+  - [1. Description de la SAE12 (semestre 1 du BUT R&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
+  - [2. Recommandations aux étudiants](#2-recommandations-aux-étudiants)
+      - [Conditions de travail](#conditions-de-travail)
+  - [3. Documentations](#3-documentations)
+    - [3.1 Documentation de référence pour les réseaux avec Linux](#31-documentation-de-référence-pour-les-réseaux-avec-linux)
+    - [3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE](#32-documentation-windows-à-lire-impérativementavant-le-démarrage-de-la-sae)
+    - [3.3 Plugins VScode intéressant à installer afin de réaliser les livrables de la SAE](#33-plugins-vscode-intéressant-à-installer-afin-de-réaliser-les-livrables-de-la-sae)
+  - [4. Contexte professionnel](#4-contexte-professionnel)
+    - [4.1 Description du projet](#41-description-du-projet)
+      - [4.1.1 Situation](#411-situation)
+      - [4.1.2 Cahier des charges de l'entreprise](#412-cahier-des-charges-de-lentreprise)
+## 1. Description de la SAE12 (semestre 1 du BUT R&T I.U.T. de Béziers)
 
-## 1.1 Présentation du contexte de la SAE12
+|Titre de la SAE|Gérer et dépanner le réseau du  poste de travail en entreprise|
+|---------------|------------------------------------------------------------------------------------------------|
+|**Quelles problématiques professionnelles se propose-t-elle d'aborder ?**|- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques du fait de la multiplicité des missions des usagers et du travail quotidien des personnels qui repose sur ces postes de travail. Des problématiques concrètes comme la configuration du réseau du poste de travail et le dépannage sont proposées aux étudiants. <br>- La création d'un livrable technique, sous un format maintenable par une équipe est une situation courante pour les informaticiens. Il est donc important que les étudiants pratiquent cet exercice.<br>- la réalisation de schéma réseaux est une tâche courante pour un technicien de la filère R&T et c'est un exercice utile proposé par cette SAE. <br> - De même la prise de notes et la rédaction d'item technique au travers d'un éditeur (VSCode) est une compétence courante dans le milieu professionnel. La sauvegarde et le "versioning" des livrables au travers de Git préparent les étudiants à un fonctionnement adopté par les organisations informatiques performantes (Infrastructure as Code , Continuous Integration & Delivery, outillage du développeur...)
+|**Description de la SAÉ en quelques lignes**|Il s'agit de répondre à un cahier des charges (contexte professionnel) et de fournir des livrables sous un format et un délai contraint.
+|**Formes pédagoqiques**|TD, projets, lectures|
+|**Modalités d’évaluation à concevoir pour s’assurer que cette SAÉ participe à l’acquisition du niveau de compétence ciblé**|Les capacités suivantes seront évalués:<br>- Utiliser un IDE moderne et modulaire.<br>- Sauvegarder et versionner son travail au travers de Git et de Github.<br>- Configurer et dépanner le réseau d'un poste client sous Linux.<br>- Configurer et dépaner le réseau d'un poste client sous Windows<br>- Rédiger une documentation à l'aide du langage MarkDown.<br>- Dessiner un schéma réseau simple compréhensible par un professionnel.<br>- Connecter un PC au réseau LAN et à l'internet.<br>- Utiliser de façon simple une machine virtuelle.<br> De même les compétences transversales suivantes seront évaluées:<br>- Répondre à un cahier des charges.<br>- Lire des documentation et en extraire les informations utiles.<br>- Explorer des solutions techniques.<br>- Fournir des livrables sous un format et un délai contraint.<br> Les compétences seront appréciées à l'aide de 4 niveaux  afin d'apprécier le travail des étudiants:<br>- Non maitrisé<br>- Basique<br>- Maitrisé<br>- Expert|<br> Les livrables et le travail des étudiants seront évalués au travers de ces capacités et lors des séances pratiques.
+|**Moyens alloués**| Lors des deux premières heures (CM 1h + TD 1h) il vous sera présenté:<br>- la SAE et les normes à respecter (icônes et adressage <br>- L'outil draw.io et son integration avec VSCode.<br>- Mermaid (dessin au format MarkDown) dans VScode.<br>- L'outil VSCode et de son intégration avec Git.<br>- Le language Markdown.<br>- L'utilisation simple d'un OS virtualisé dans VirtualBox.<br>Il restera: <br>- SAE encadrée : 8 heures.<br>- SAE non Encadrée : 8 heures
+|
 
-### 1.1.1 Contenu des cours et des TD
-
-  CM 1h + TD 1h
-  Lors de ses deux heures il vous sera présenté:
-
-- la SAE et normes à respecter (icônes et adressage).
-- L'outil draw.io et son integration avec VSCode.
-- Mermaid dans VScode.
-- l'outil VSCode et de son intégration avec  Git.
-- Le language Markdown.
-- L'installation d'un OS par virtualisation afin de réaliser la S.A.E. dans de bonnes conditions.
-
-### 1.1.2 Heures allouées
-
-- SAE encadrée : 8 heures
-- SAE non Encadrée : 8 heures
-
-### 1.1.3 Recommandations aux étudiants
+## 2. Recommandations aux étudiants
 
 Le document suivant est accessible sur GitHub:
-<https://github.com/pushou/SAE12> et peut être consulté à tout moment. Il donne un exemple de ce qui est attendu par le responsable technique de la société en termes de livrable.
+<https://github.com/pushou/SAE12> et peut être consulté à tout moment. Il donne un exemple de ce qui est attendu sur la forme par le responsable technique de la société en termes de livrable.
 
 - Matériels à votre disposition : PC du CloudLab sous Windows, Routeurs, (mini)switchs Cisco, PC sous Linux de l'IUT.
 
@@ -30,9 +33,10 @@ Le document suivant est accessible sur GitHub:
   - Logiciel proposé pour écrire en MarKDown : Vscode
   - Git Hub for education pour le rendu en MarkDown (voir l'enseignant pour obtenir l’URL de rendu)
 
-Instructions étudiants avant la SAE:
+Instructions aux étudiants avant la SAE:
 
 - Lire la documentation proposée.
+- Prendre des notes dès que des informations vous sont données.
 - Installer VSCode et suivre un tutoriel sur MarkDown.
 - Créer un compte sur Github (Utiliser votre prénom.nom si vous voulez être noté !).
 - Réfléchir avant d’entreprendre quoi que ce soit et établir un chemin à réaliser en début de chaque demi-journée.
@@ -41,17 +45,19 @@ Instructions étudiants avant la SAE:
 
 Travail en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
 
-#### Documentation de référence pour les réseaux avec Linux
+## 3. Documentations
+
+### 3.1 Documentation de référence pour les réseaux avec Linux
 
 - <https://baturin.org/docs/iproute2/>
 
-#### Documentation Windows à lire impérativement avant le démarrage de la SAE
+### 3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE
 
 - <https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig>
 - <https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps>
 - <https://github.com/MicrosoftDocs/sysinternals> & <https://docs.microsoft.com/fr-fr/sysinternals/>
 
-## Plugins VScode intéressant afin de réaliser les livrables de la SAE
+### 3.3 Plugins VScode intéressant à installer afin de réaliser les livrables de la SAE
 
 - <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
 - <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
@@ -59,17 +65,17 @@ Travail en groupes de deux étudiants avec un CR commun au format markdown doubl
 - <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
 - <https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts>
 
-## 2. Contexte professionnel
+## 4. Contexte professionnel
 
-### 2.1 Description du projet
+### 4.1 Description du projet
 
-#### 2.1.1 Situation
+#### 4.1.1 Situation
 
 Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille de système d'exploitation. La direction inquiète de ce cloisonnement voudrait rendre polyvalentes ses équipes. Cette polyvalence s'appuiera sur des documents décrivant la configuration du réseau et son dépannage pour Linux et Windows.
 
 Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans un réseau séparé des autres mais doit pouvoir communiquer avec eux. L'utilisation d'un firewall est recommandé.
 
-#### 2.1.2 Cahier des charges de l'entreprise
+#### 4.1.2 Cahier des charges de l'entreprise
 
 L'entreprise souhaite utiliser GitHub comme référentiel commun pour stocker les informations et tracer les évolutions de sa documentation.
 D'autre part cette société ayant comme principal activité le développement logiciel, l'utilisation de l'éditeur vscode est requise. La rédaction sera faite en langage MarDown. L'utilisation de certains "plugins" fortement conseillé.  
@@ -91,12 +97,3 @@ Le schéma suivant résume les deux composantes de la SAE.
         style id3 fill:#f9f,stroke:#337,stroke-width:2px;
         click SAE12 href "https://github.com/pushou/SAE12.git" "Lien vers le repo Git de la SAE12"
 ```
-
-## 3. Description de la SAE et objectifs
-
-|Titre de la SAÉ|Gérer et depanner le réseau du  poste de travail en entreprise|
-|---------------|------------------------------------------------------------------------------------------------|
-|**Quelle problématique professionnelle propose-t-elle ?**|- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques du fait de la multiplicité des missions des usagers et du travail quotidien des personnels qui repose sur des postes de travail adaptés. Des problématiques concrètes comme la configuration du réseau du poste de travail et le dépannage est proposée aux étudiants. <br>- La création d'un livrable technique, sous un format maintenable par une équipe est une situation courante pour les informaticiens.<br>- la réalisation de schéma réseaux est une tâche courante pour un technicien de la filère R&T et c'est un exercice utile proposé par cette SAE. De même la prise de notes technique au travers d'un éditeur (VSCode) très utilisé de nos jours et la sauvegarde au travers de Git prépare les étudiants à un fonctionnement adopté par les organisations informatiques performantes (Infrastructure as Code , Continuous Integration & Delivery...)
-|**Description de la SAÉ en quelques lignes**|-Il s'agit de répondre à un cahier des charges <br> - D'explorer des solutions techniques, de choisir celle répondant le mieux au besoin<br>D'être capable d'argumentez sur ces choix.<br>- de fournir des livrables sous un format et un délai contraint.
-|**Formes pédagoqiques**|TD, projets|
-|**Modalités d’évaluation à concevoir pour s’assurer que cette SAÉ participe à l’acquisition du niveau de compétence ciblé**|L’étudiant doit:<br> - être capable de retranscrire l’architecture réseau grâce à un outil de schéma réseau <br> - de présenter un livrable clair, généré au fur et à mesure du déroulement de la SAE par la prise de note.
