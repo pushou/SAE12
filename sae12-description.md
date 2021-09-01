@@ -45,7 +45,7 @@ Travail en groupes de deux étudiants avec un CR commun au format markdown doubl
 - <https://baturin.org/docs/iproute2/>
 - <https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig>
 - <https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps>
-- <https://github.com/MicrosoftDocs/sysinternals>
+- <https://github.com/MicrosoftDocs/sysinternals> & <https://docs.microsoft.com/fr-fr/sysinternals/>
 
 ## Plugins VScode intéressant afin de réaliser les livrables de la SAE
 
