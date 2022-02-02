@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sae12-description.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="sae12-r%C3%A9seau">SAE12 réseau</h1>
+<ul>
+<li><a href="#sae12-r%C3%A9seau">SAE12 réseau</a>
+<ul>
+<li><a href="#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-b%C3%A9ziers">1. Description de la SAE12 (semestre 1 du BUT R&amp;T I.U.T. de Béziers)</a></li>
+<li><a href="#2-recommandations-aux-%C3%A9tudiants">2. Recommandations aux étudiants</a>
+<ul>
+<li><a href="#conditions-de-travail-et-d%C3%A9valuation">Conditions de travail et d'évaluation</a></li>
+</ul>
+</li>
+<li><a href="#3-documentations">3. Documentations</a>
+<ul>
+<li><a href="#31-documentation-de-r%C3%A9f%C3%A9rence-pour-les-r%C3%A9seaux-avec-linux">3.1 Documentation de référence pour les réseaux avec Linux</a></li>
+<li><a href="#32-documentation-windows-%C3%A0-lire-imp%C3%A9rativementavant-le-d%C3%A9marrage-de-la-sae">3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE</a></li>
+<li><a href="#33-documentation-git">3.3 Documentation Git</a></li>
+<li><a href="#34-plugins-vscode-int%C3%A9ressant-%C3%A0-installer-afin-de-r%C3%A9aliser-les-livrables-de-la-sae">3.4 Plugins VScode intéressant à installer afin de réaliser les livrables de la SAE</a></li>
+</ul>
+</li>
+<li><a href="#4-contexte-professionnel">4. Contexte professionnel</a>
+<ul>
+<li><a href="#41-description-du-projet">4.1 Description du projet</a>
+<ul>
+<li><a href="#411-situation">4.1.1 Situation</a></li>
+<li><a href="#412-cahier-des-charges-de-lentreprise">4.1.2 Cahier des charges de l'entreprise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-b%C3%A9ziers">1. Description de la SAE12 (semestre 1 du BUT R&amp;T I.U.T. de Béziers)</h2>
+<table>
+<thead>
+<tr>
+<th>Titre de la SAE</th>
+<th>Gérer et dépanner le réseau du  poste de travail en entreprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quelles problématiques professionnelles se propose-t-elle d'aborder ?</strong></td>
+<td>- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques.  La multiplicité des missions et un travail quotidien intense repose sur ces postes de travail ce qui en fait un sujet important. Des problématiques concrètes comme la configuration du réseau du poste de travail et le dépannage sont donc proposées aux étudiants dans cette S.A.E.. <br>- La création d'un livrable technique, sous un format maintenable et partagé par une équipe est une situation courante pour les informaticiens. Il est donc important que les étudiants pratiquent cet exercice.<br>- La réalisation de schéma réseaux est une tâche banale pour un technicien de la filière R&amp;T et c'est un exercice utile proposé par cette SAE. <br> - De même la prise de notes et la rédaction d'item technique au travers d'un éditeur (par exemple VSCode) est une compétence essentielle dans le milieu professionnel. La sauvegarde et le &quot;versioning&quot; des livrables au travers de Git préparent les étudiants à un fonctionnement adopté par les organisations informatiques performantes (Infrastructure as Code , Continuous Integration &amp; Delivery, outillage du développeur...)</td>
+</tr>
+<tr>
+<td><strong>Description de la SAÉ en quelques lignes</strong></td>
+<td>Il s'agit de répondre à un cahier des charges (contexte professionnel) et de fournir des livrables sous un format et un délai contraint.</td>
+</tr>
+<tr>
+<td><strong>Formes pédagogiques</strong></td>
+<td>Cours, TD, projets, lectures de supports proposés</td>
+</tr>
+<tr>
+<td><strong>Modalités d’évaluation à concevoir pour s’assurer que cette SAÉ participe à l’acquisition du niveau de compétence ciblé</strong></td>
+<td>Les capacités suivantes seront évaluées:<br>- Utiliser un IDE moderne et modulaire.<br>- Sauvegarder et versionner son travail au travers de Git et de Github.<br>- Configurer et dépanner le réseau d'un poste client sous Linux.<br>- Configurer et dépanner le réseau d'un poste client sous Windows<br>- Rédiger une documentation à l'aide du langage MarkDown.<br> - Utiliser les outils et ressources documentaires de manière professionnelle.<br>- Analyser et restituer des informations de façon synthétique.<br>- Dessiner un schéma réseau simple compréhensible par un professionnel.<br>- Connecter un PC au réseau LAN et à l'internet.<br>- Utiliser de façon simple une machine virtuelle.<br>- Utiliser les arborescences de fichiers relatives au réseau sous Linux et Windows.<br> De même les compétences transversales suivantes seront évaluées:<br>- Répondre à un cahier des charges.<br>- Lire des documentation et en extraire les informations utiles.<br>- Explorer des solutions techniques.<br>- S'impliquer dans équipe pour un projet commun.<br>- Fournir des livrables sous un format et un délai contraint.<br>- Comprendre et analyser une commande : Contextualiser/s’approprier un contexte <br>- Répartir les tâches dans l’équipe de travail. <br>- Nommer efficacement ses documents, organiser ses fichiers et dossiers <br>- Partager de façon collective l’information avec (Git).<br> Respecter des délais et échéances dans un travail en mode projet.<br>- Prévoir un temps de relecture/débogage. <br> Les compétences seront appréciées à l'aide de 4 niveaux  afin d'apprécier le travail des étudiants:<br>- <strong>insuffisant</strong> <br>- <strong>satisfaisant</strong><br>- <strong>remarquable</strong><br>- <strong>excellent</strong></td>
+</tr>
+<tr>
+<td><strong>Moyens alloués</strong></td>
+<td>Lors des deux premières heures (CM 1h + TD 1h) il vous sera présenté:<br>- la SAE et les normes à respecter (icônes et adressage) <br>- L'outil draw.io et son integration avec VSCode.<br>- Mermaid (dessin au format MarkDown) dans VScode.<br>- L'outil VSCode et de son intégration avec Git.<br>- Le language Markdown.<br>- L'utilisation simple d'un OS virtualisé dans VirtualBox.<br>Il vous restera ensuite pour réaliser le S.A.E.: <br>- SAE encadrée : 8 heures.<br>- SAE non Encadrée : 8 heures</td>
+</tr>
+<tr>
+<td><strong>Pré-requis</strong></td>
+<td>R101 R02 R103. Il s'agit de connaître les principes de bases de l'adressage IPv4, des notions de bases sur les services réseaux (dont le dns) et du routage statique (passerelle par défaut). D'autres part l'étudiant aura le niveau utilisateur sur Windows et Linux.</td>
+</tr>
+<tr>
+<td>La S.A.E. alimente les <strong>apprentissages critiques</strong> suivants:</td>
+<td>- AC0113: Configurer les fonctions de base du réseau local.<br> - AC0114: Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et administration des réseaux et services fournis.<br> - AC0115: Identifier les dysfonctionnements du réseau local. <br>- AC0116 : Installer un poste client.<br>- AC0215: Communiquer avec un client ou un collaborateur.<br>- AC0316: S’intégrer dans un environnement propice au développement et au travail collaboratif <br>- AC0311: Utiliser un système informatique et ses outils. <br>- AC0312: Lire, exécuter, corriger et modifier un programme.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-recommandations-aux-%C3%A9tudiants">2. Recommandations aux étudiants</h2>
+<p>Le document suivant est accessible sur GitHub:
+<a href="https://github.com/pushou/SAE12">https://github.com/pushou/SAE12</a> et peut être consulté à tout moment. Il donne un exemple de ce qui est attendu sur la forme par le responsable technique de la société en termes de livrable.</p>
+<ul>
+<li>
+<p>Matériels à votre disposition : PC du CloudLab sous Windows, Routeurs, (mini)switchs Cisco, PC sous Linux de l'IUT.</p>
+</li>
+<li>
+<p>Logiciels à disposition :</p>
+<ul>
+<li>Logiciel proposé pour écrire en MarKDown : Vscode</li>
+<li>Git Hub for education pour le rendu en MarkDown <a href="https://classroom.github.com/a/WsrJSKax">Clickez ici!</a></li>
+</ul>
+</li>
+</ul>
+<p>Instructions aux étudiants avant et pendant la SAE:</p>
+<ul>
+<li>Lire la documentation proposée.</li>
+<li>Prendre des notes dès que des informations vous sont données.</li>
+<li>Installer VSCode et suivre un tutoriel sur MarkDown.</li>
+<li>Créer un compte sur Github (Utiliser votre prénom.nom si vous voulez être noté !).</li>
+<li>Réfléchir avant d’entreprendre quoi que ce soit et établir un chemin en vue d'atteindre un objectif en début de chaque demi-journée.</li>
+</ul>
+<h4 id="conditions-de-travail-et-d%C3%A9valuation">Conditions de travail et d'évaluation</h4>
+<p>Travail et évaluation en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.</p>
+<h2 id="3-documentations">3. Documentations</h2>
+<h3 id="31-documentation-de-r%C3%A9f%C3%A9rence-pour-les-r%C3%A9seaux-avec-linux">3.1 Documentation de référence pour les réseaux avec Linux</h3>
+<ul>
+<li><a href="https://www.inetdoc.net/">https://www.inetdoc.net/</a></li>
+<li><a href="https://baturin.org/docs/iproute2/">https://baturin.org/docs/iproute2/</a></li>
+</ul>
+<h3 id="32-documentation-windows-%C3%A0-lire-imp%C3%A9rativement-avant-le-d%C3%A9marrage-de-la-sae">3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE</h3>
+<ul>
+<li><a href="https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig">https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig</a></li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps">https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps</a></li>
+<li><a href="https://github.com/MicrosoftDocs/sysinternals">https://github.com/MicrosoftDocs/sysinternals</a> &amp; <a href="https://docs.microsoft.com/fr-fr/sysinternals/">https://docs.microsoft.com/fr-fr/sysinternals/</a></li>
+</ul>
+<h3 id="33-documentation-git">3.3 Documentation Git</h3>
+<ul>
+<li><a href="http://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git">http://git-scm.com/book/fr/v2/Démarrage-rapide-Rudiments-de-Git</a></li>
+</ul>
+<h3 id="34-plugins-vscode-int%C3%A9ressant-%C3%A0-installer-afin-de-r%C3%A9aliser-les-livrables-de-la-sae">3.4 Plugins VScode intéressant à installer afin de réaliser les livrables de la SAE</h3>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio">https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid">https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image">https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts">https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts</a></li>
+</ul>
+<h2 id="4-contexte-professionnel">4. Contexte professionnel</h2>
+<h3 id="41-description-du-projet">4.1 Description du projet</h3>
+<h4 id="411-situation">4.1.1 Situation</h4>
+<p>Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille de système d'exploitation. La direction, inquiète de ce cloisonnement, voudrait rendre polyvalentes ses équipes. Cette polyvalence s'appuiera sur des documents décrivant la configuration du réseau et son dépannage pour Linux et Windows.</p>
+<ul>
+<li>Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans un réseau séparé des autres mais doit pouvoir communiquer avec les autres binômes.</li>
+</ul>
+<h4 id="412-cahier-des-charges-de-lentreprise">4.1.2 Cahier des charges de l'entreprise</h4>
+<p>L'entreprise souhaite utiliser GitHub comme référentiel commun pour stocker les informations et tracer les évolutions de sa documentation.
+D'autre part cette société ayant comme principal activité le développement logiciel, l'utilisation de l'éditeur vscode est requise. La rédaction sera donc faite en langage MarkDown avec un rendu final au format pdf. L'utilisation de certains &quot;plugins&quot; est fortement conseillé.</p>
+<p>Le CTO (« Chief Technical Officier ») vous demande en tant que technicien supérieur de :</p>
+<ul>
+<li>
+<p>Créer un document ressource permettant à tous les techniciens de travailler sans cloisonnement afin d'améliorer la polyvalence de chacun. Ce document, qui se veut pratique, doit contenir des exemples d'utilisation d'outils logiciels pour la configuration des réseaux des postes ainsi que des outils pour analyser d’éventuels problèmes basiques(TroubleShooting). Le document doit faire correspondre une commande Linux à son équivalent Windows chaque fois que c’est possible.Chaque commande doit être accompagnée d'un exemple et de sa sortie sur le terminal. C’est le <strong>premier livrable</strong> à rendre.</p>
+</li>
+<li>
+<p>Concevoir une architecture réseau simple pour chaque salle avec une segmentation de deux postes  (1 par  <strong>VLAN</strong> distinct). Tous les réseaux doivent pouvoir communiquer entre eux. Le CTO vous demande un schéma réseau en utilisant l'outil de dessin draw.io ainsi qu'un descriptif des configurations et des actions pour mettre en place ce réseau.
+L'adressage et la représentation iconique des matériels suivront les normes imposées par le CTO. Chaque réseau interne devra être dériver du poste de travail C’est le <strong>deuxième livrable</strong> à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahier des charges lors de la réalisation d'une maquette en salle de TP.</p>
+</li>
+</ul>
+<p>Dans ces deux livrables le C.T.O. accordera une importance à la qualité de l'expression écrite (grammaire, orthographe et rédaction) qui sera prise ne compte dans votre évaluation annuelle.</p>
+<p>Le schéma suivant résume les deux composantes de la SAE.</p>
+<pre><code class="language-mermaid"><div class="mermaid">     flowchart LR;
+        SAE12[SAE12]-->id1["Réaliser un réseau simple et communiquant entre les équipes"];
+        SAE12-->id3["Configurer et dépanner le réseau de son poste de travail Windows ou Linux"];
+        style SAE12 fill:#99ccff,stroke:#337,stroke-width:8px;
+        style id1 fill:#f9f,stroke:#337,stroke-width:2px;
+        style id3 fill:#f9f,stroke:#337,stroke-width:2px;
+        click SAE12 href "https://github.com/pushou/SAE12.git" "Lien vers le repo Git de la SAE12"
+</div></code></pre>
+
+</body>
+</html>
