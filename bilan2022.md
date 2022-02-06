@@ -43,5 +43,5 @@ C'est un entraînement utile et une vérification de la validité des informatio
 
 ## Quantité de travail
 
-Les listing de commandes sans exemples (ou pire copiés sur le web) ne sont pas des guides de dépannage mais tout au plus un "mémo". Le but est de vous faire pratiquer sous Linux et Windows et d'augmenter le nombre d'heures pratiques. Sans saisie et feedback vous n'apprendrez pas.
+Les listing de commandes sans exemples (ou pire copiés sur le web) ne sont pas des guides de dépannage mais tout au plus un "mémo". Le but est de vous faire pratiquer sous Linux et Windows. Sans saisie ni confrontation avec la machine vous n'apprendrez pas.
 
