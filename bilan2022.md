@@ -34,7 +34,7 @@ Dans le monde professionnel cette validation est faite au travers d'une recette 
 
 ## Respect des consignes données
 
-Si les rendus ont respecté la représentation iconique des éléments du réseau ce n'est pas le cas pour la notation de l'adressage. Il est rappelé que les réseaux doivent apparaître avec un "Variable Length Subnet Mask" (/16 /24 /30...) et que seul les octets significatifs  doivent apparaître sur les matériels présents sur le schéma. (le dernier pour un /24 les deux derniers pour un /16...). C'est une obligation dans le cadres des travaux réalisés lors de mes enseignements.
+Si les rendus ont respecté la représentation iconique des éléments du réseau ce n'est pas le cas pour la notation de l'adressage. Il est rappelé que les réseaux doivent apparaître avec un "Variable Length Subnet Mask" (/16 /24 /30...) et que seul les octets significatifs  doivent apparaître sur les matériels présents sur le schéma. (le dernier pour un /24 les deux derniers pour un /16...). C'est une obligation dans le cadre des travaux réalisés lors de mes enseignements.
 
 ## Sortie des commandes
 
