@@ -25,10 +25,6 @@
 |**Pré-requis**|R101 R02 R103. Il s'agit de connaître les principes de bases de l'adressage IPv4, des notions de bases sur les services réseaux (dont le dns) et du routage statique (passerelle par défaut). D'autres part l'étudiant aura le niveau utilisateur sur Windows et Linux.|
 |La S.A.E. alimente les **apprentissages critiques** suivants:| - AC0113: Configurer les fonctions de base du réseau local.<br> - AC0114: Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et administration des réseaux et services fournis.<br> - AC0115: Identifier les dysfonctionnements du réseau local. <br>- AC0116 : Installer un poste client.<br>- AC0215: Communiquer avec un client ou un collaborateur.<br>- AC0316: S’intégrer dans un environnement propice au développement et au travail collaboratif <br>- AC0311: Utiliser un système informatique et ses outils. <br>- AC0312: Lire, exécuter, corriger et modifier un programme.
 
-
-
-
-
 ## 2. Recommandations aux étudiants
 
 Le document suivant est accessible sur GitHub:
@@ -85,7 +81,7 @@ Travail et évaluation en groupes de deux étudiants avec un CR commun au format
 
 Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille de système d'exploitation. La direction, inquiète de ce cloisonnement, voudrait rendre polyvalentes ses équipes. Cette polyvalence s'appuiera sur des documents décrivant la configuration du réseau et son dépannage pour Linux et Windows.
 
-* Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans un réseau séparé des autres mais doit pouvoir communiquer avec les autres binômes.
+Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans deux réseaux séparés (donc deux VLAN) des autres mais doit pouvoir communiquer avec les autres binômes.
 
 #### 4.1.2 Cahier des charges de l'entreprise
 
@@ -97,9 +93,13 @@ Le CTO (« Chief Technical Officier ») vous demande en tant que technicien su
 - Créer un document ressource permettant à tous les techniciens de travailler sans cloisonnement afin d'améliorer la polyvalence de chacun. Ce document, qui se veut pratique, doit contenir des exemples d'utilisation d'outils logiciels pour la configuration des réseaux des postes ainsi que des outils pour analyser d’éventuels problèmes basiques(TroubleShooting). Le document doit faire correspondre une commande Linux à son équivalent Windows chaque fois que c’est possible.Chaque commande doit être accompagnée d'un exemple et de sa sortie sur le terminal. C’est le **premier livrable** à rendre.
 
 - Concevoir une architecture réseau simple pour chaque salle avec une segmentation de deux postes  (1 par  **VLAN** distinct). Tous les réseaux doivent pouvoir communiquer entre eux. Le CTO vous demande un schéma réseau en utilisant l'outil de dessin draw.io ainsi qu'un descriptif des configurations et des actions pour mettre en place ce réseau.
-  L'adressage et la représentation iconique des matériels suivront les normes imposées par le CTO. Chaque réseau interne devra être dériver du poste de travail C’est le **deuxième livrable** à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahier des charges lors de la réalisation d'une maquette en salle de TP.
+L'adressage et la représentation iconique des matériels suivront les normes imposées par le CTO. Chaque réseau interne devra être dériver du poste de travail (ex poste 2= 192.168.**2**.0/24 comme réseau des PC.) C’est le **deuxième livrable** à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahier des charges lors de la réalisation d'une maquette en salle de TP.
 
-Dans ces deux livrables le C.T.O. accordera une importance à la qualité de l'expression écrite (grammaire, orthographe et rédaction) qui sera prise ne compte dans votre évaluation annuelle.
+Dans ces deux livrables le C.T.O. accordera une importance à la qualité de l'expression écrite (grammaire, orthographe et rédaction) qui sera prise ne compte dans votre évaluation annuelle pour votre augmentation. A chaque copie d'écran du terminal il vous sera demandé de lancer la commande "uname -a" pour Linux et
+"echo %USERDOMAIN%\%USERNAME%" et de vous "logger" avec un compte permettant de vous identifier. Pour le schéma il sera l'expression du travail du groupe et vous devrez éviter de recopier le schéma d'un autre groupe.
+
+Le C.T.O. veut évaluer votre travail individuellement. Vous devez donc **annoncer en tête de chaque livrable** votre prénom et votre nom ainsi que celui de votre binôme dans le cas d'un rendu commun.
+Une bonne pratique est de mettre dans le nom du fichier du livrable vos noms et la date.
 
 Le schéma suivant résume les deux composantes de la SAE.
 

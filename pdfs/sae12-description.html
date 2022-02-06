@@ -488,9 +488,7 @@ code {
 <h3 id="41-description-du-projet">4.1 Description du projet</h3>
 <h4 id="411-situation">4.1.1 Situation</h4>
 <p>Une société a constaté que ses techniciens (niveau bac pro) travaillent chacun avec leurs outils sans référentiel commun.  Chaque technicien est spécialisé sur une famille de système d'exploitation. La direction, inquiète de ce cloisonnement, voudrait rendre polyvalentes ses équipes. Cette polyvalence s'appuiera sur des documents décrivant la configuration du réseau et son dépannage pour Linux et Windows.</p>
-<ul>
-<li>Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans un réseau séparé des autres mais doit pouvoir communiquer avec les autres binômes.</li>
-</ul>
+<p>Selon une directive du CSO (Chief Security Officer) chaque équipe (soit deux postes de travail) doit être dans deux réseaux séparés (donc deux VLAN) des autres mais doit pouvoir communiquer avec les autres binômes.</p>
 <h4 id="412-cahier-des-charges-de-lentreprise">4.1.2 Cahier des charges de l'entreprise</h4>
 <p>L'entreprise souhaite utiliser GitHub comme référentiel commun pour stocker les informations et tracer les évolutions de sa documentation.
 D'autre part cette société ayant comme principal activité le développement logiciel, l'utilisation de l'éditeur vscode est requise. La rédaction sera donc faite en langage MarkDown avec un rendu final au format pdf. L'utilisation de certains &quot;plugins&quot; est fortement conseillé.</p>
@@ -501,10 +499,13 @@ D'autre part cette société ayant comme principal activité le développement l
 </li>
 <li>
 <p>Concevoir une architecture réseau simple pour chaque salle avec une segmentation de deux postes  (1 par  <strong>VLAN</strong> distinct). Tous les réseaux doivent pouvoir communiquer entre eux. Le CTO vous demande un schéma réseau en utilisant l'outil de dessin draw.io ainsi qu'un descriptif des configurations et des actions pour mettre en place ce réseau.
-L'adressage et la représentation iconique des matériels suivront les normes imposées par le CTO. Chaque réseau interne devra être dériver du poste de travail C’est le <strong>deuxième livrable</strong> à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahier des charges lors de la réalisation d'une maquette en salle de TP.</p>
+L'adressage et la représentation iconique des matériels suivront les normes imposées par le CTO. Chaque réseau interne devra être dériver du poste de travail (ex poste 2= 192.168.<strong>2</strong>.0/24 comme réseau des PC.) C’est le <strong>deuxième livrable</strong> à rendre. Le CTO validera que chaque groupe de technicien a répondu au cahier des charges lors de la réalisation d'une maquette en salle de TP.</p>
 </li>
 </ul>
-<p>Dans ces deux livrables le C.T.O. accordera une importance à la qualité de l'expression écrite (grammaire, orthographe et rédaction) qui sera prise ne compte dans votre évaluation annuelle.</p>
+<p>Dans ces deux livrables le C.T.O. accordera une importance à la qualité de l'expression écrite (grammaire, orthographe et rédaction) qui sera prise ne compte dans votre évaluation annuelle pour votre augmentation. A chaque copie d'écran du terminal il vous sera demandé de lancer la commande &quot;uname -a&quot; pour Linux et
+&quot;echo %USERDOMAIN%%USERNAME%&quot; et de vous &quot;logger&quot; avec un compte permettant de vous identifier. Pour le schéma il sera l'expression du travail du groupe et vous devrez éviter de recopier le schéma d'un autre groupe.</p>
+<p>Le C.T.O. veut évaluer votre travail individuellement. Vous devez donc <strong>annoncer en tête de chaque livrable</strong> votre prénom et votre nom ainsi que celui de votre binôme dans le cas d'un rendu commun.
+Une bonne pratique est de mettre dans le nom du fichier du livrable vos noms et la date.</p>
 <p>Le schéma suivant résume les deux composantes de la SAE.</p>
 <pre><code class="language-mermaid"><div class="mermaid">     flowchart LR;
         SAE12[SAE12]-->id1["Réaliser un réseau simple et communiquant entre les équipes"];
