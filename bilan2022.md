@@ -29,7 +29,7 @@ L'organisation du rendu est essentielle lors du premier contact de l'enseignant 
 
 ## Validation du travail
 
-Certains n'ont pas fait valider leur travail sur la maquette réseau par un enseignant et leur compte-rendu de groupe de contient qu'un schéma sans traces de réalisation. Ce rendu ne peut donc pas être considéré comme valide alors que c'était demandé explicitement dans le cadre de la SAE.
+Certains n'ont pas fait valider leur travail sur la maquette réseau par un enseignant et leur compte-rendu de groupe ne contient qu'un schéma sans traces de réalisation. Ce rendu ne peut donc pas être considéré comme valide alors que c'était demandé explicitement dans le cadre de la SAE.
 Dans le monde professionnel cette validation est faite au travers d'une recette : à la fin de votre travail, c'est l'entreprise  pour laquelle vous intervenez qui valide votre action à partir du document de recette. Cette validation déclenche le paiement de votre prestation.
 
 ## Respect des consignes données
