@@ -34,7 +34,7 @@ Le document suivant est accessible sur GitHub:
 
 - Logiciels à disposition :
   - Logiciel proposé pour écrire en MarKDown : Vscode
-  - Git Hub for education pour le rendu en MarkDown [Clickez ici!](https://classroom.github.com/a/WsrJSKax)
+  - Git Hub for education pour le rendu en MarkDown [Clickez ici!](https://classroom.github.com/a/rUGCsZ9p)
 
 Instructions aux étudiants avant et pendant la SAE:
 
