@@ -33,7 +33,7 @@ Le document suivant est accessible sur GitHub:
 - Matériels à votre disposition : PC du CloudLab sous Windows, Routeurs, (mini)switchs Cisco, PC sous Linux de l'IUT.
 
 - Logiciels à disposition :
-  - Logiciel proposé pour écrire en MarKDown : Vscode
+  - Logiciel proposé pour écrire en MarKDown : [Visual Studio Code](https://code.visualstudio.com/)
   - Git Hub for education pour le rendu en MarkDown [Clickez ici!](https://classroom.github.com/a/rUGCsZ9p)
 
 Instructions aux étudiants avant et pendant la SAE:
@@ -57,21 +57,21 @@ Travail et évaluation en groupes de deux étudiants avec un CR commun au format
 
 ### 3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE
 
-- <https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig>
-- <https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps>
-- <https://github.com/MicrosoftDocs/sysinternals> & <https://docs.microsoft.com/fr-fr/sysinternals/>
+- [Documentation IPCONFIG](https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/ipconfig)
+- [Documentation NETTCPIP](https://docs.microsoft.com/en-us/powershell/module/nettcpip/?view=windowsserver2019-ps)
+- [Documentation du code source de SysInternals](https://github.com/MicrosoftDocs/sysinternals) & [Documentation de Microsoft de SysInternals](https://docs.microsoft.com/fr-fr/sysinternals/)
 
 ### 3.3 Documentation Git
 
-- <http://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git>
+- [Livre GIT-SCM sur les rudiments de Git](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git)
 
 ### 3.4 Plugins VScode intéressant à installer afin de réaliser les livrables de la SAE
 
-- <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
-- <https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>
-- <https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid>
-- <https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image>
-- <https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts>
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [Draw.io Integration: Mermaid plugin](https://marketplace.visualstudio.com/items?itemName=nopeslide.vscode-drawio-plugin-mermaid)
+- [Markdown Paste](https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image)
+- [Markdown Shortcuts](https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)
 
 ## 4. Contexte professionnel
 
