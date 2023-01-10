@@ -34,7 +34,7 @@ Le document suivant est accessible sur GitHub:
 
 - Logiciels à disposition :
   - Logiciel proposé pour écrire en MarKDown : [Visual Studio Code](https://code.visualstudio.com/)
-  - Git Hub for education pour le rendu en MarkDown [Clickez ici!](https://classroom.github.com/a/rUGCsZ9p)
+  - Git Hub for education pour le rendu en MarkDown [Cliquez ici!](https://classroom.github.com/a/rUGCsZ9p)
 
 Instructions aux étudiants avant et pendant la SAE:
 
@@ -52,8 +52,8 @@ Travail et évaluation en groupes de deux étudiants avec un CR commun au format
 
 ### 3.1 Documentation de référence pour les réseaux avec Linux
 
-- <https://www.inetdoc.net/>
-- <https://baturin.org/docs/iproute2/>
+- [Inetdoc](https://www.inetdoc.net/)
+- [Documentation iproute2](https://baturin.org/docs/iproute2/)
 
 ### 3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE
 
