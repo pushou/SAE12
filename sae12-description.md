@@ -1,7 +1,7 @@
 # SAE12 réseau
 
 - [SAE12 réseau](#sae12-réseau)
-  - [1. Description de la SAE12 (semestre 1 du BUT R&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
+  - [1. Description de la SAE12 (semestre 1 du BUT R\&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
   - [2. Recommandations aux étudiants](#2-recommandations-aux-étudiants)
       - [Conditions de travail et d'évaluation](#conditions-de-travail-et-dévaluation)
   - [3. Documentations](#3-documentations)
@@ -42,12 +42,15 @@ Instructions aux étudiants avant et pendant la SAE:
 - Lire la documentation proposée.
 - Prendre des notes dès que des informations vous sont données.
 - Installer VSCode et suivre un tutoriel sur MarkDown.
+- Envoyer un mail à iutb-pret@umontpellier.fr afin de réserver un routeur Mikrotik (1 par personne).
 - Créer un compte sur Github (Utiliser votre prénom.nom si vous voulez être noté !).
 - Réfléchir avant d’entreprendre quoi que ce soit et établir un chemin en vue d'atteindre un objectif en début de chaque demi-journée.
 
+
 #### Conditions de travail et d'évaluation
 
-Travail et évaluation en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
+Travail et évaluation en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant. Vous devez faire apparaître clairement qui a réalisé la tâche (par exemple la documentation sur une commande) dans le livrable. Vous pouvez travailler chacun au sein du même projet sur votre fichier personnel et à la fin "merger" vos deux fichiers en un seul.
+Le montage réseau, l'installation de GNS3, de la VM sont à faire individuellement. Chaque étudiant fera validé ses réalisations auprès d'un enseignant.
 
 ## 3. Documentations
 
