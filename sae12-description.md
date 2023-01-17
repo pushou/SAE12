@@ -1,7 +1,7 @@
 # SAE12 réseau
 
 - [SAE12 réseau](#sae12-réseau)
-  - [1. Description de la SAE12 (semestre 1 du BUT R&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
+  - [1. Description de la SAE12 (semestre 1 du BUT R\&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
   - [2. Recommandations aux étudiants](#2-recommandations-aux-étudiants)
       - [Conditions de travail et d'évaluation](#conditions-de-travail-et-dévaluation)
   - [3. Documentations](#3-documentations)
