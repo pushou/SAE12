@@ -34,19 +34,23 @@ Le document suivant est accessible sur GitHub:
 
 - Logiciels à disposition :
   - Logiciel proposé pour écrire en MarKDown : [Visual Studio Code](https://code.visualstudio.com/)
-  - Git Hub for education pour le rendu en MarkDown [Cliquez ici!](https://classroom.github.com/a/rUGCsZ9p)
+  - Git Hub for education pour le rendu en MarkDown [Cliquez ici!](https://classroom.github.com/a/FJ1hseZV)
+
 
 Instructions aux étudiants avant et pendant la SAE:
 
 - Lire la documentation proposée.
 - Prendre des notes dès que des informations vous sont données.
 - Installer VSCode et suivre un tutoriel sur MarkDown.
+- Envoyer un mail à iutb-pret@umontpellier.fr afin de réserver un routeur Mikrotik (1 par personne).
 - Créer un compte sur Github (Utiliser votre prénom.nom si vous voulez être noté !).
 - Réfléchir avant d’entreprendre quoi que ce soit et établir un chemin en vue d'atteindre un objectif en début de chaque demi-journée.
 
+
 #### Conditions de travail et d'évaluation
 
-Travail et évaluation en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant.
+Travail et évaluation en groupes de deux étudiants avec un CR commun au format markdown doublé par un rendu pdf sur un repository GitHub fourni par l'enseignant. Vous devez faire apparaître clairement qui a réalisé la tâche (par exemple la documentation sur une commande) dans le livrable. Vous pouvez travailler chacun au sein du même projet sur votre fichier personnel et à la fin "merger" vos deux fichiers en un seul.
+Le montage réseau, l'installation de GNS3, de la VM sont à faire individuellement. Chaque étudiant fera validé ses réalisations auprès d'un enseignant.
 
 ## 3. Documentations
 
