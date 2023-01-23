@@ -1,9 +1,28 @@
 # SAE12 réseau
 
+<style>
+table, tr, th {
+  text-align: left;
+  text-decoration: none;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a0e
+}
+
+tr:nth-child(odd) {
+  background-color: #414141
+}
+
+li {
+  list-style: " - ";
+}
+</style>
+
 - [SAE12 réseau](#sae12-réseau)
   - [1. Description de la SAE12 (semestre 1 du BUT R\&T I.U.T. de Béziers)](#1-description-de-la-sae12-semestre-1-du-but-rt-iut-de-béziers)
   - [2. Recommandations aux étudiants](#2-recommandations-aux-étudiants)
-      - [Conditions de travail et d'évaluation](#conditions-de-travail-et-dévaluation)
+    - [Conditions de travail et d'évaluation](#conditions-de-travail-et-dévaluation)
   - [3. Documentations](#3-documentations)
     - [3.1 Documentation de référence pour les réseaux avec Linux](#31-documentation-de-référence-pour-les-réseaux-avec-linux)
     - [3.2 Documentation Windows à lire impérativement avant le démarrage de la SAE](#32-documentation-windows-à-lire-impérativementavant-le-démarrage-de-la-sae)
@@ -13,17 +32,92 @@
     - [4.1 Description du projet](#41-description-du-projet)
       - [4.1.1 Situation](#411-situation)
       - [4.1.2 Cahier des charges de l'entreprise](#412-cahier-des-charges-de-lentreprise)
+
 ## 1. Description de la SAE12 (semestre 1 du BUT R&T I.U.T. de Béziers)
 
-|Titre de la SAE|Gérer et dépanner le réseau du  poste de travail en entreprise|
-|---------------|------------------------------------------------------------------------------------------------|
-|**Quelles problématiques professionnelles se propose-t-elle d'aborder ?**|- La gestion du poste de travail est depuis toujours un défi pour les organisations informatiques.  La multiplicité des missions et un travail quotidien intense repose sur ces postes de travail ce qui en fait un sujet important. Des problématiques concrètes comme la configuration du réseau du poste de travail et le dépannage sont donc proposées aux étudiants dans cette S.A.E.. <br>- La création d'un livrable technique, sous un format maintenable et partagé par une équipe est une situation courante pour les informaticiens. Il est donc important que les étudiants pratiquent cet exercice.<br>- La réalisation de schéma réseaux est une tâche banale pour un technicien de la filière R&T et c'est un exercice utile proposé par cette SAE. <br> - De même la prise de notes et la rédaction d'item technique au travers d'un éditeur (par exemple VSCode) est une compétence essentielle dans le milieu professionnel. La sauvegarde et le "versioning" des livrables au travers de Git préparent les étudiants à un fonctionnement adopté par les organisations informatiques performantes (Infrastructure as Code , Continuous Integration & Delivery, outillage du développeur...)
-|**Description de la SAÉ en quelques lignes**|Il s'agit de répondre à un cahier des charges (contexte professionnel) et de fournir des livrables sous un format et un délai contraint.
-|**Formes pédagogiques**|Cours, TD, projets, lectures de supports proposés|
-|**Modalités d’évaluation à concevoir pour s’assurer que cette SAÉ participe à l’acquisition du niveau de compétence ciblé**|Les capacités suivantes seront évaluées:<br>- Utiliser un IDE moderne et modulaire.<br>- Sauvegarder et versionner son travail au travers de Git et de Github.<br>- Configurer et dépanner le réseau d'un poste client sous Linux.<br>- Configurer et dépanner le réseau d'un poste client sous Windows<br>- Rédiger une documentation à l'aide du langage MarkDown.<br> - Utiliser les outils et ressources documentaires de manière professionnelle.<br>- Analyser et restituer des informations de façon synthétique.<br>- Dessiner un schéma réseau simple compréhensible par un professionnel.<br>- Connecter un PC au réseau LAN et à l'internet.<br>- Utiliser de façon simple une machine virtuelle.<br>- Utiliser les arborescences de fichiers relatives au réseau sous Linux et Windows.<br> De même les compétences transversales suivantes seront évaluées:<br>- Répondre à un cahier des charges.<br>- Lire des documentation et en extraire les informations utiles.<br>- Explorer des solutions techniques.<br>- S'impliquer dans équipe pour un projet commun.<br>- Fournir des livrables sous un format et un délai contraint.<br>- Comprendre et analyser une commande : Contextualiser/s’approprier un contexte <br>- Répartir les tâches dans l’équipe de travail. <br>- Nommer efficacement ses documents, organiser ses fichiers et dossiers <br>- Partager de façon collective l’information avec (Git).<br> Respecter des délais et échéances dans un travail en mode projet.<br>- Prévoir un temps de relecture/débogage. <br> Les compétences seront appréciées à l'aide de 4 niveaux  afin d'apprécier le travail des étudiants:<br>- **insuffisant** <br>- **satisfaisant**<br>- **remarquable**<br>- **excellent**|<br> Les livrables et le travail des étudiants seront évalués au travers de ces capacités et lors des séances pratiques.
-|**Moyens alloués**| Lors des deux premières heures (CM 1h + TD 1h) il vous sera présenté:<br>- la SAE et les normes à respecter (icônes et adressage) <br>- L'outil draw.io et son integration avec VSCode.<br>- Mermaid (dessin au format MarkDown) dans VScode.<br>- L'outil VSCode et de son intégration avec Git.<br>- Le language Markdown.<br>- L'utilisation simple d'un OS virtualisé dans VirtualBox.<br>Il vous restera ensuite pour réaliser le S.A.E.: <br>- SAE encadrée : 8 heures.<br>- SAE non Encadrée : 8 heures
-|**Pré-requis**|R101 R02 R103. Il s'agit de connaître les principes de bases de l'adressage IPv4, des notions de bases sur les services réseaux (dont le dns) et du routage statique (passerelle par défaut). D'autres part l'étudiant aura le niveau utilisateur sur Windows et Linux.|
-|La S.A.E. alimente les **apprentissages critiques** suivants:| - AC0113: Configurer les fonctions de base du réseau local.<br> - AC0114: Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et administration des réseaux et services fournis.<br> - AC0115: Identifier les dysfonctionnements du réseau local. <br>- AC0116 : Installer un poste client.<br>- AC0215: Communiquer avec un client ou un collaborateur.<br>- AC0316: S’intégrer dans un environnement propice au développement et au travail collaboratif <br>- AC0311: Utiliser un système informatique et ses outils. <br>- AC0312: Lire, exécuter, corriger et modifier un programme.
+<table>
+  <tr>
+    <th>Titre de la SAE</th>
+    <th>Gérer et dépanner le réseau du poste de travail en entreprise</th>
+  </tr>
+  <tr>
+    <td>Quelles problématiques professionnelles se propose-t-elle d'aborder ?</td>
+    <td>
+      <ul>
+        <li>
+          La gestion du poste de travail est depuis toujours un défi pour les
+          organisations informatiques. <br />
+          La multiplicité des missions et un travail quotidien intense repose sur
+          ces postes de travail ce qui en fait un sujet important. <br />
+          Des problématiques concrètes comme la configuration
+          du réseau du poste de travail et le dépannage sont donc proposées
+          aux étudiants dans cette S.A.E..
+        </li>
+        <li>
+          La création d'un livrable technique, sous un format maintenable
+          et partagé par une équipe est une situation courante pour les
+          informaticiens. <br />
+          Il est donc important que les étudiants pratiquent cet exercice.
+        </li>
+        <li>
+          La réalisation de schéma réseaux est une tâche banale pour un technicien
+          de la filière R&T et c'est un exercice utile proposé par cette SAE.
+        </li>
+        <li>
+          De même la prise de notes et la rédaction d'item technique au travers
+          d'un éditeur (par exemple VSCode) est une compétence essentielle dans
+          le milieu professionnel. <br />
+          La sauvegarde et le "versioning" des livrables
+          au travers de Git préparent les étudiants à un fonctionnement adopté
+          par les organisations informatiques performantes
+          (Infrastructure as Code , Continuous Integration & Delivery, outillage du développeur...)
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Description de la SAÉ en quelques lignes
+    </td>
+    <td>
+      Il s'agit de répondre à un cahier des charges (contexte professionnel)
+      et de fournir des livrables sous un format et un délai contraint.
+    </td>
+  </tr>
+  <tr>
+    <td>Formes pédagogiques</td>
+    <td>Cours, TD, projets, lectures de supports proposés</td>
+  </tr>
+  <tr>
+    <td>
+      Modalités d’évaluation à concevoir pour s’assurer que cette SAÉ participe
+      à l’acquisition du niveau de compétence ciblé
+    </td>
+    <td>
+      Les capacités suivantes seront évaluées:<br>- Utiliser un IDE moderne et modulaire.<br>- Sauvegarder et versionner son travail au travers de Git et de Github.<br>- Configurer et dépanner le réseau d'un poste client sous Linux.<br>- Configurer et dépanner le réseau d'un poste client sous Windows<br>- Rédiger une documentation à l'aide du langage MarkDown.<br> - Utiliser les outils et ressources documentaires de manière professionnelle.<br>- Analyser et restituer des informations de façon synthétique.<br>- Dessiner un schéma réseau simple compréhensible par un professionnel.<br>- Connecter un PC au réseau LAN et à l'internet.<br>- Utiliser de façon simple une machine virtuelle.<br>- Utiliser les arborescences de fichiers relatives au réseau sous Linux et Windows.<br> De même les compétences transversales suivantes seront évaluées:<br>- Répondre à un cahier des charges.<br>- Lire des documentation et en extraire les informations utiles.<br>- Explorer des solutions techniques.<br>- S'impliquer dans équipe pour un projet commun.<br>- Fournir des livrables sous un format et un délai contraint.<br>- Comprendre et analyser une commande : Contextualiser/s’approprier un contexte <br>- Répartir les tâches dans l’équipe de travail. <br>- Nommer efficacement ses documents, organiser ses fichiers et dossiers <br>- Partager de façon collective l’information avec (Git).<br> Respecter des délais et échéances dans un travail en mode projet.<br>- Prévoir un temps de relecture/débogage. <br> Les compétences seront appréciées à l'aide de 4 niveaux  afin d'apprécier le travail des étudiants:<br>- **insuffisant** <br>- **satisfaisant**<br>- **remarquable**<br>- **excellent**|<br> Les livrables et le travail des étudiants seront évalués au travers de ces capacités et lors des séances pratiques.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Moyens alloués
+    </td>
+    <td>
+      Lors des deux premières heures (CM 1h + TD 1h) il vous sera présenté:<br>- la SAE et les normes à respecter (icônes et adressage) <br>- L'outil draw.io et son integration avec VSCode.<br>- Mermaid (dessin au format MarkDown) dans VScode.<br>- L'outil VSCode et de son intégration avec Git.<br>- Le language Markdown.<br>- L'utilisation simple d'un OS virtualisé dans VirtualBox.<br>Il vous restera ensuite pour réaliser le S.A.E.: <br>- SAE encadrée : 8 heures.<br>- SAE non Encadrée : 8 heures
+    </td>
+  </tr>
+  <tr>
+    <td>Pré-requis</td>
+    <td>
+      R101 R02 R103. Il s'agit de connaître les principes de bases de l'adressage IPv4, des notions de bases sur les services réseaux (dont le dns) et du routage statique (passerelle par défaut). D'autres part l'étudiant aura le niveau utilisateur sur Windows et Linux.
+    </td>
+  </tr>
+
+  <tr>
+    <td> La S.A.E. alimente les **apprentissages critiques** suivants: </td>
+    <td>
+       - AC0113: Configurer les fonctions de base du réseau local.<br> - AC0114: Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et administration des réseaux et services fournis.<br> - AC0115: Identifier les dysfonctionnements du réseau local. <br>- AC0116 : Installer un poste client.<br>- AC0215: Communiquer avec un client ou un collaborateur.<br>- AC0316: S’intégrer dans un environnement propice au développement et au travail collaboratif <br>- AC0311: Utiliser un système informatique et ses outils. <br>- AC0312: Lire, exécuter, corriger et modifier un programme.
+    </td>
+</table>
 
 ## 2. Recommandations aux étudiants
 
